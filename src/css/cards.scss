@@ -1,0 +1,67 @@
+// components/card.scss
+@import './quasar.variables.scss';
+
+.q-card {
+  border-radius: $radius;
+  background-color: $card;
+  color: $card-foreground;
+  border: 1px solid $border;
+  box-shadow: $shadow-sm;
+  overflow: hidden;
+  
+  // Card header
+  .q-card__section--vert:first-child {
+    padding: $spacing-6;
+    padding-bottom: 0;
+    
+    // Card title
+    .q-card__title {
+      font-size: $font-size-xl;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: $spacing-1;
+    }
+    
+    // Card subtitle
+    .q-card__subtitle {
+      color: $muted-foreground;
+      font-size: $font-size-sm;
+    }
+  }
+  
+  // Card content
+  .q-card__section:not(:first-child):not(:last-child) {
+    padding: $spacing-6;
+  }
+  
+  // Card footer
+  .q-card__section--vert:last-child {
+    padding: $spacing-6;
+    padding-top: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: $spacing-2;
+  }
+  
+  // Variante de Card sem borda
+  &--flat {
+    border: none;
+    box-shadow: none;
+  }
+  
+  // Variante de Card com sombra
+  &--bordered {
+    border: 1px solid $border;
+  }
+  
+  // Hover effect
+  &--hoverable {
+    transition: box-shadow $transition-duration $transition-timing, 
+                transform $transition-duration $transition-timing;
+    
+    &:hover {
+      box-shadow: $shadow-md;
+      transform: translateY(-2px);
+    }
+  }
+}

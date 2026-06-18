@@ -1,0 +1,156 @@
+@use "sass:color";
+@import './quasar.variables.scss';
+
+.q-btn {
+  // Redefinir estilos padrão do Quasar
+  min-height: unset;
+  box-shadow: none !important;
+  
+  // Estilo básico Shadcn
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border-radius: $radius;
+  transition: all $transition-duration $transition-timing;
+  cursor: pointer;
+  padding: $spacing-2 $spacing-4;
+  font-size: $font-size-sm;
+  
+  // Remover espaçamento padrão do Quasar
+  .q-btn__content {
+    flex-wrap: nowrap;
+    min-height: unset;
+    padding: 0;
+  }
+  
+  &:focus-visible {
+    outline: 2px solid $ring;
+    outline-offset: 2px;
+  }
+  
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  // Variantes de estilo
+  
+  // Variante primary
+  &--primary {
+    background-color: $primary;
+    color: $primary-foreground;
+    
+    &:hover:not(:disabled) {
+      background-color: color.scale($primary, $lightness: -3%);
+    }
+    
+    &:active:not(:disabled) {
+      background-color: color.scale($primary, $lightness: -5%);
+    }
+  }
+  
+  // Variante secondary
+  &--secondary {
+    background-color: $secondary;
+    color: $secondary-foreground;
+    
+    &:hover:not(:disabled) {
+      background-color: color.scale($secondary, $lightness: -3%);
+    }
+    
+    &:active:not(:disabled) {
+      background-color: color.scale($secondary, $lightness: -5%);
+    }
+  }
+  
+  // Variante outline
+  &--outline {
+    background-color: transparent;
+    border: 1px solid $border;
+    color: $foreground;
+    
+    &:hover:not(:disabled) {
+      background-color: $muted;
+      border-color: $foreground;
+    }
+    
+    &:active:not(:disabled) {
+      background-color: color.scale($muted, $lightness: -2%);
+    }
+  }
+  
+  // Variante ghost
+  &--ghost {
+    background-color: transparent;
+    color: $foreground;
+    
+    &:hover:not(:disabled) {
+      background-color: $muted;
+    }
+    
+    &:active:not(:disabled) {
+      background-color: color.scale($muted, $lightness: -2%);
+    }
+  }
+  
+  // Variante destructive
+  &--destructive {
+    background-color: $destructive;
+    color: $destructive-foreground;
+    
+    &:hover:not(:disabled) {
+      background-color: color.scale($destructive, $lightness: -5%);
+    }
+    
+    &:active:not(:disabled) {
+      background-color: color.scale($destructive, $lightness: -8%);
+    }
+  }
+  
+  // Variante link
+  &--link {
+    background-color: transparent;
+    color: $primary;
+    padding: 0;
+    height: auto;
+    
+    &:hover:not(:disabled) {
+      text-decoration: underline;
+    }
+  }
+  
+  // Tamanhos
+  &--xs {
+    padding: $spacing-1 $spacing-2;
+    font-size: $font-size-xs;
+    height: 24px;
+  }
+  
+  &--sm {
+    padding: $spacing-1 $spacing-3;
+    font-size: $font-size-sm;
+    height: 32px;
+  }
+  
+  &--md {
+    padding: $spacing-2 $spacing-4;
+    font-size: $font-size-sm;
+    height: 40px;
+  }
+  
+  &--lg {
+    padding: $spacing-2 $spacing-5;
+    font-size: $font-size-base;
+    height: 48px;
+  }
+  
+  // Estilo para ícone
+  .q-icon {
+    margin-right: $spacing-2;
+    
+    &:only-child {
+      margin-right: 0;
+    }
+  }
+}
