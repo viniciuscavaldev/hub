@@ -41,7 +41,7 @@ const botoes = ref([
   },
   {
     name: "ABS Real Time",
-    link: "http://10.85.204.10:8501/"
+    link: "http://10.85.204.8:8501"
   },
   {
     name: "Análise Copilot",
@@ -73,7 +73,7 @@ const botoes = ref([
   },
   {
     name: "WFM Ativo",
-    link: "http://10.85.204.10:8502/"
+    link: "http://10.85.204.8:8502"
   },
   {
     name: "WFM Optimus",
