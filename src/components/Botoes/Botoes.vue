@@ -36,10 +36,6 @@ function iconPowerBi (name) {
 
 const botoes = ref([
   {
-    name: "SGP - Sistema de Gestão do Planejamento",
-    link: "http://10.85.204.4:7030/login"
-  },
-  {
     name: "ABS Real Time",
     link: "http://10.85.204.8:8501"
   },
@@ -56,12 +52,28 @@ const botoes = ref([
     link: "https://bpm-lecom.hapvida.com.br/sso/?redirectBackTo=https://bpm-lecom.hapvida.com.br/"
   },
   {
+    name: "MOVE",
+    link: "http://10.85.204.8:5000"
+  },
+  {
+    name: "NEO/MOP",
+    link: "http://10.85.204.8:8508/"
+  },
+  {
     name: "Quadro Funcional",
     link: "http://10.85.204.8:8504/"
   },
   {
-    name: "MOVE",
-    link: "http://10.85.204.8:5000"
+    name: "QUADRO FUNCIONAL AGENDAMENTO",
+    link: "http://10.85.204.8:8520/"
+  },
+  {
+    name: "Sac atendimento rapido",
+    link: "http://10.85.204.8:9004/#/dashboard/atendimento-rapido"
+  },
+  {
+    name: "SGP - Sistema de Gestão do Planejamento",
+    link: "http://10.85.204.4:7030/login"
   },
   {
     name: "SIJ - Sistema Integrado de Jornada",
@@ -78,18 +90,6 @@ const botoes = ref([
   {
     name: "WFM Optimus",
     link: "https://hapvida.optimus.app.br/"
-  },
-  {
-    name: "Sac atendimento rapido",
-    link: "http://10.85.204.8:9004/#/dashboard/atendimento-rapido"
-  },
-  {
-    name: "QUADRO FUNCIONAL AGENDAMENTO",
-    link: "http://10.85.204.8:8520/"
-  },
-  {
-    name: "NEO/MOP",
-    link: "http://10.85.204.8:8508/"
   }
 ]);
 
@@ -99,20 +99,16 @@ const botoesbi = ref([
     link: "https://app.powerbi.com/links/Lq9u5vXmvf?ctid=77d68323-6f4b-460f-8aae-d32c654ec490&pbi_source=linkShare"
   },
   {
-    name: "QUADRO | SCHEDULE",
-    link: "https://app.powerbi.com/reportEmbed?reportId=26db5451-de42-4d05-9e31-69e08d4438f2&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
-  },
-  {
     name: "Cardio Alerta",
     link: "https://app.powerbi.com/groups/1a9bc9c6-857c-4818-a85c-323ba2f77511/reports/8af31f92-5410-44a1-bec8-b6be17a4d735?ctid=77d68323-6f4b-460f-8aae-d32c654ec490&pbi_source=linkShare"
   },
   {
-    name: "Feedback Mensal Call Center",
-    link: "https://app.powerbi.com/groups/1a9bc9c6-857c-4818-a85c-323ba2f77511/reports/6340ce4c-f738-4253-876b-558247f2347f?ctid=77d68323-6f4b-460f-8aae-d32c654ec490&pbi_source=linkShare"
+    name: "Consultas e exames",
+    link: "https://app.powerbi.com/reportEmbed?reportId=9492222d-cfab-4848-9a6e-e211b4df0f21&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
   },
   {
-    name: "Rechamadas",
-    link: "https://app.powerbi.com/reportEmbed?reportId=2bebbd51-f4da-4e60-a626-f2f951f5b997&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
+    name: "Feedback Mensal Call Center",
+    link: "https://app.powerbi.com/groups/1a9bc9c6-857c-4818-a85c-323ba2f77511/reports/6340ce4c-f738-4253-876b-558247f2347f?ctid=77d68323-6f4b-460f-8aae-d32c654ec490&pbi_source=linkShare"
   },
   {
     name: "Operacional - Avaya",
@@ -127,16 +123,20 @@ const botoesbi = ref([
     link: "https://app.powerbi.com/reportEmbed?reportId=cb778171-07a0-447e-b2f0-90e1ab9fbdd4&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
   },
   {
+    name: "QUADRO | SCHEDULE",
+    link: "https://app.powerbi.com/reportEmbed?reportId=26db5451-de42-4d05-9e31-69e08d4438f2&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
+  },
+  {
+    name: "Rechamadas",
+    link: "https://app.powerbi.com/reportEmbed?reportId=2bebbd51-f4da-4e60-a626-f2f951f5b997&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
+  },
+  {
     name: "RELATÓRIO DE LIGAÇÕES",
     link: "https://app.powerbi.com/reportEmbed?reportId=6868c6af-c7fe-4bdc-ac8c-5f141dec47c2&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
   },
   {
     name: "TRANSFERÊNCIAS",
     link: "https://app.powerbi.com/groups/1a9bc9c6-857c-4818-a85c-323ba2f77511/reports/35882412-5e37-4565-b1b1-da7fd56f0a41/3657517486cff7ddda83?experience=power-bi"
-  },
-  {
-    name: "Consultas e exames",
-    link: "https://app.powerbi.com/reportEmbed?reportId=9492222d-cfab-4848-9a6e-e211b4df0f21&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
   }
 ]);
 
