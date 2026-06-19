@@ -73,7 +73,7 @@ const botoes = ref([
   },
   {
     name: "SGP - Sistema de Gestão do Planejamento",
-    link: "http://10.85.204.4:7030/login"
+    link: "http://10.85.204.4:7030//login"
   },
   {
     name: "SIJ - Sistema Integrado de Jornada",
