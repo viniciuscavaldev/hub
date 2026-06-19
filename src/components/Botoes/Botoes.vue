@@ -133,6 +133,10 @@ const botoesbi = ref([
   {
     name: "TRANSFERÊNCIAS",
     link: "https://app.powerbi.com/groups/1a9bc9c6-857c-4818-a85c-323ba2f77511/reports/35882412-5e37-4565-b1b1-da7fd56f0a41/3657517486cff7ddda83?experience=power-bi"
+  },
+  {
+    name: "Consultas e exames",
+    link: "https://app.powerbi.com/reportEmbed?reportId=9492222d-cfab-4848-9a6e-e211b4df0f21&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
   }
 ]);
 
