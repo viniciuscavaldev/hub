@@ -137,6 +137,10 @@ const botoesbi = ref([
   {
     name: "TRANSFERÊNCIAS",
     link: "https://app.powerbi.com/groups/1a9bc9c6-857c-4818-a85c-323ba2f77511/reports/35882412-5e37-4565-b1b1-da7fd56f0a41/3657517486cff7ddda83?experience=power-bi"
+  },
+  {
+    name: "Leading Indicators - Call Center",
+    link: "https://app.powerbi.com/reportEmbed?reportId=a63f1c18-8a34-418e-a24c-6b4d7699303c&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
   }
 ]);
 
