@@ -123,8 +123,9 @@ const botoesbi = ref([
     link: "https://app.powerbi.com/reportEmbed?reportId=cb778171-07a0-447e-b2f0-90e1ab9fbdd4&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
   },
   {
-    name: "QUADRO | SCHEDULE",
-    link: "https://app.powerbi.com/reportEmbed?reportId=26db5451-de42-4d05-9e31-69e08d4438f2&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
+    name: "QUADRO REAL TIME",
+    link: "http://10.85.204.8:7030/quadro",
+    news: true
   },
   {
     name: "Rechamadas",
@@ -188,6 +189,7 @@ const botoesbi = ref([
           v-for="botao in botoesbi"
           :key="botao.link"
           class="hub-card hub-card--bi"
+          :class="{ 'hub-card--news': botao.news }"
           :href="botao.link.trim()"
           target="_blank"
           rel="noopener noreferrer"
@@ -374,6 +376,18 @@ const botoesbi = ref([
   box-shadow:
     0 0 0 1px rgba(255, 77, 0, 0.12),
     0 8px 24px -8px rgba(255, 77, 0, 0.25);
+  animation: pulse-border 2s infinite ease-in-out;
+}
+
+@keyframes pulse-border {
+  0%, 100% {
+    border-color: rgba(255, 77, 0, 0.45);
+    box-shadow: 0 0 0 1px rgba(255, 77, 0, 0.12), 0 8px 24px -8px rgba(255, 77, 0, 0.25);
+  }
+  50% {
+    border-color: rgba(255, 77, 0, 0.95);
+    box-shadow: 0 0 0 4px rgba(255, 77, 0, 0.25), 0 8px 32px -4px rgba(255, 77, 0, 0.4);
+  }
 }
 
 .hub-card__icon-wrap {
