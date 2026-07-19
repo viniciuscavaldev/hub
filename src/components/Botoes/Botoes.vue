@@ -53,7 +53,7 @@ const botoes = ref([
   },
   {
     name: "MOVE",
-    link: "http://10.85.204.8:5000"
+    link: "http://10.85.204.8:5000/login"
   },
   {
     name: "NEO/MOP",
