@@ -7,7 +7,7 @@ div.background
   img(
     src="/images/logos.png"
   )
-  p Desenvolvido por: Análise e planejamento - Caio Costa
+  p Desenvolvido por: Análise e planejamento - Vinicius Cavalcante/Caio costa
 </template>
 
 <style scoped>
