@@ -18,7 +18,7 @@
           </p>
         </div>
           <p class="hub-brand-header__credit-inline">
-            Desenvolvido por: Caio Costa
+            Desenvolvido por: Vinicius Cavalcante
           </p>
         <div class="hub-brand-header__col hub-brand-header__col--right" aria-hidden="true" />
       </div>
