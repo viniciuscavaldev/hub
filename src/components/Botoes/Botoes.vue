@@ -52,36 +52,12 @@ const botoes = ref([
     link: "https://bpm-lecom.hapvida.com.br/sso/?redirectBackTo=https://bpm-lecom.hapvida.com.br/"
   },
   {
-    name: "MOVE",
-    link: "http://10.85.204.8:5000/login"
-  },
-  {
-    name: "NEO/MOP",
-    link: "http://10.85.204.8:8508/"
-  },
-  {
-    name: "Quadro Funcional",
-    link: "http://10.85.204.8:8504/"
-  },
-  {
-    name: "QUADRO FUNCIONAL AGENDAMENTO",
-    link: "http://10.85.204.8:8520/"
-  },
-  {
     name: "Sac atendimento rapido",
     link: "http://10.85.204.8:9004/#/dashboard/atendimento-rapido"
   },
   {
     name: "SGP - Sistema de Gestão do Planejamento",
     link: "http://10.85.204.8:7030/login"
-  },
-  {
-    name: "SIJ - Sistema Integrado de Jornada",
-    link: "http://10.85.204.8:4000/#/"
-  },
-  {
-    name: "Vagas em Aberto",
-    link: "http://10.85.204.8:9000/login"
   },
   {
     name: "WFM Ativo",
