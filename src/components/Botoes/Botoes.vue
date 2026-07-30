@@ -133,6 +133,12 @@ const botoesbi = ref([
           Sistemas internos
         </h2>
       </header>
+      <div class="hub-info-banner">
+        <q-icon name="info" size="18px" class="hub-info-banner__icon" />
+        <span class="hub-info-banner__text">
+          Os sistemas <strong>MOVE, NEO/MOP, Quadro Funcional, Agendamento, Vagas</strong> e <strong>SIJ</strong> foram desativados do menu principal e integrados como módulos dentro do próprio <strong>SGP</strong>, unificando as ferramentas em uma plataforma única.
+        </span>
+      </div>
       <div class="hub-grid">
         <a
           v-for="botao in botoes"
@@ -408,5 +414,34 @@ const botoesbi = ref([
 
 .hub-card--bi:hover .hub-card__arrow {
   color: #ff4d00;
+}
+
+.hub-info-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: 0.75rem 0.95rem;
+  margin-bottom: 0.85rem;
+  border-radius: 0.75rem;
+  background: rgba(21, 57, 170, 0.06);
+  border: 1px solid rgba(21, 57, 170, 0.12);
+  flex-shrink: 0;
+}
+
+.hub-info-banner__icon {
+  color: #1539aa;
+  margin-top: 0.1rem;
+  flex-shrink: 0;
+}
+
+.hub-info-banner__text {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: #1e293b;
+}
+
+.hub-info-banner__text strong {
+  color: #1539aa;
+  font-weight: 700;
 }
 </style>
