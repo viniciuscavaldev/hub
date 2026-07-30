@@ -66,6 +66,11 @@ const botoes = ref([
   {
     name: "WFM Optimus",
     link: "https://hapvida.optimus.app.br/"
+  },
+  {
+    name: "QUADRO REAL TIME",
+    link: "http://10.85.204.8:7030/quadro",
+    news: true
   }
 ]);
 
@@ -97,11 +102,6 @@ const botoesbi = ref([
   {
     name: "OPERACIONAL - OPTIMUS",
     link: "https://app.powerbi.com/reportEmbed?reportId=cb778171-07a0-447e-b2f0-90e1ab9fbdd4&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
-  },
-  {
-    name: "QUADRO REAL TIME",
-    link: "http://10.85.204.8:7030/quadro",
-    news: true
   },
   {
     name: "Rechamadas",
@@ -166,6 +166,12 @@ const botoesbi = ref([
           Power BI
         </h2>
       </header>
+      <div class="hub-info-banner">
+        <q-icon name="info" size="18px" class="hub-info-banner__icon" />
+        <span class="hub-info-banner__text">
+          O <strong>QUADRO REAL TIME</strong> foi migrado para a seção de <strong>Sistemas Internos</strong> e agora funciona de forma integrada e otimizada.
+        </span>
+      </div>
       <div class="hub-grid">
         <a
           v-for="botao in botoesbi"
