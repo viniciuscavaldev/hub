@@ -52,6 +52,16 @@ const botoes = ref([
     link: "https://bpm-lecom.hapvida.com.br/sso/?redirectBackTo=https://bpm-lecom.hapvida.com.br/"
   },
   {
+    name: "QUADRO REAL TIME",
+    link: "http://10.85.204.8:7030/quadro",
+    news: true
+  },
+  {
+    name: "SIJ - Sistema Integrado de Jornada (Banco de Horas)",
+    link: "http://10.85.204.8:4001/#/login",
+    sublabel: "Sistema atualizado até o Sisqual ser descontinuado"
+  },
+  {
     name: "Sac atendimento rapido",
     link: "http://10.85.204.8:9004/#/dashboard/atendimento-rapido"
   },
@@ -66,11 +76,6 @@ const botoes = ref([
   {
     name: "WFM Optimus",
     link: "https://hapvida.optimus.app.br/"
-  },
-  {
-    name: "QUADRO REAL TIME",
-    link: "http://10.85.204.8:7030/quadro",
-    news: true
   }
 ]);
 
@@ -90,6 +95,10 @@ const botoesbi = ref([
   {
     name: "Feedback Mensal Call Center",
     link: "https://app.powerbi.com/groups/1a9bc9c6-857c-4818-a85c-323ba2f77511/reports/6340ce4c-f738-4253-876b-558247f2347f?ctid=77d68323-6f4b-460f-8aae-d32c654ec490&pbi_source=linkShare"
+  },
+  {
+    name: "Leading Indicators - Call Center",
+    link: "https://app.powerbi.com/reportEmbed?reportId=a63f1c18-8a34-418e-a24c-6b4d7699303c&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
   },
   {
     name: "Operacional - Avaya",
@@ -112,12 +121,12 @@ const botoesbi = ref([
     link: "https://app.powerbi.com/reportEmbed?reportId=6868c6af-c7fe-4bdc-ac8c-5f141dec47c2&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
   },
   {
-    name: "TRANSFERÊNCIAS",
-    link: "https://app.powerbi.com/groups/1a9bc9c6-857c-4818-a85c-323ba2f77511/reports/35882412-5e37-4565-b1b1-da7fd56f0a41/3657517486cff7ddda83?experience=power-bi"
+    name: "Relatório de Ligações - D0",
+    link: "https://app.powerbi.com/reportEmbed?reportId=d4d76d79-2631-4544-a594-7a6c96cb269b&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
   },
   {
-    name: "Leading Indicators - Call Center",
-    link: "https://app.powerbi.com/reportEmbed?reportId=a63f1c18-8a34-418e-a24c-6b4d7699303c&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
+    name: "TRANSFERÊNCIAS",
+    link: "https://app.powerbi.com/groups/1a9bc9c6-857c-4818-a85c-323ba2f77511/reports/35882412-5e37-4565-b1b1-da7fd56f0a41/3657517486cff7ddda83?experience=power-bi"
   }
 ]);
 
@@ -136,7 +145,7 @@ const botoesbi = ref([
       <div class="hub-info-banner">
         <q-icon name="info" size="18px" class="hub-info-banner__icon" />
         <span class="hub-info-banner__text">
-          Os sistemas <strong>MOVE, NEO/MOP, Quadro Funcional, Agendamento, Vagas</strong> e <strong>SIJ</strong> foram desativados do menu principal e integrados como módulos dentro do próprio <strong>SGP</strong>, unificando as ferramentas em uma plataforma única.
+          Os sistemas <strong>MOVE, NEO/MOP, Quadro Funcional, Agendamento</strong> e <strong>Vagas</strong> foram desativados do menu principal e integrados como módulos dentro do próprio <strong>SGP</strong>, unificando as ferramentas em uma plataforma única.
         </span>
       </div>
       <div class="hub-grid">
@@ -152,7 +161,10 @@ const botoesbi = ref([
           <span class="hub-card__icon-wrap" aria-hidden="true">
             <q-icon :name="botao.icon || iconSistema(botao.name)" size="22px" />
           </span>
-          <span class="hub-card__label">{{ botao.name }}</span>
+          <span class="hub-card__label-group">
+            <span class="hub-card__label">{{ botao.name }}</span>
+            <span v-if="botao.sublabel" class="hub-card__sublabel">{{ botao.sublabel }}</span>
+          </span>
           <q-icon name="north_east" class="hub-card__arrow" size="18px" aria-hidden="true" />
         </a>
       </div>
@@ -399,10 +411,27 @@ const botoesbi = ref([
   color: #ff4d00;
 }
 
-.hub-card__label {
+.hub-card__label-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
   flex: 1;
   text-align: left;
   min-width: 0;
+}
+
+.hub-card__label {
+  text-align: left;
+  min-width: 0;
+}
+
+.hub-card__sublabel {
+  font-size: 0.6875rem;
+  text-transform: none;
+  font-weight: 500;
+  color: #ef4444;
+  letter-spacing: 0;
+  line-height: 1.25;
 }
 
 .hub-card__arrow {
