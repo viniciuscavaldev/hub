@@ -93,6 +93,11 @@ const botoesbi = ref([
     link: "https://app.powerbi.com/reportEmbed?reportId=9492222d-cfab-4848-9a6e-e211b4df0f21&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
   },
   {
+    name: "Eficiência BackOffice",
+    // IMPORTANTE: O link foi cortado no chat. Substitua abaixo pela URL completa!
+    link: "https://app.powerbi.com/reportEmbed?reportId=302ff172-467b-4..."
+  },
+  {
     name: "Feedback Mensal Call Center",
     link: "https://app.powerbi.com/groups/1a9bc9c6-857c-4818-a85c-323ba2f77511/reports/6340ce4c-f738-4253-876b-558247f2347f?ctid=77d68323-6f4b-460f-8aae-d32c654ec490&pbi_source=linkShare"
   },
