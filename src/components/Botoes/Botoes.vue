@@ -57,7 +57,7 @@ const botoes = ref([
     news: true
   },
   {
-    name: "SIJ - Sistema Integrado de Jornada (Banco de Horas)",
+    name: "Sistema Integrado de Jornada (Banco de Horas)",
     link: "http://10.85.204.8:4001/#/login",
     sublabel: "Sistema atualizado até o Sisqual ser descontinuado"
   },
