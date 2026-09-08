@@ -95,7 +95,7 @@ const botoesbi = ref([
   {
     name: "Eficiência BackOffice",
     // IMPORTANTE: O link foi cortado no chat. Substitua abaixo pela URL completa!
-    link: "https://app.powerbi.com/reportEmbed?reportId=302ff172-467b-4..."
+    link: "https://app.powerbi.com/reportEmbed?reportId=302ff172-467b-4a5c-9dfc-2e1da05e38db&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
   },
   {
     name: "Feedback Mensal Call Center",
