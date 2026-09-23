@@ -57,9 +57,9 @@ const botoes = ref([
     news: true
   },
   {
-    name: "Sistema Integrado de Jornada (Banco de Horas)",
+    name: "SIJ - Banco de Horas",
     link: "http://10.85.204.8:4001/#/login",
-    sublabel: "Sistema atualizado até o Sisqual ser descontinuado"
+    sublabel: "Ativo até a descontinuação do Sisqual"
   },
   {
     name: "Sac atendimento rapido",
@@ -94,7 +94,6 @@ const botoesbi = ref([
   },
   {
     name: "Eficiência BackOffice",
-    // IMPORTANTE: O link foi cortado no chat. Substitua abaixo pela URL completa!
     link: "https://app.powerbi.com/reportEmbed?reportId=302ff172-467b-4a5c-9dfc-2e1da05e38db&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
   },
   {
@@ -116,7 +115,7 @@ const botoesbi = ref([
   {
     name: "OPERACIONAL - OPTIMUS",
     link: "https://app.powerbi.com/reportEmbed?reportId=cb778171-07a0-447e-b2f0-90e1ab9fbdd4&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490",
-    sublabel: "As abas Minha Equipe e Indicadores Operacionais estão no Optimus Lite"
+    sublabel: "Abas Minha Equipe e Indicadores no Optimus Lite"
   },
   {
     name: "Optimus Lite",
@@ -246,10 +245,10 @@ const botoesbi = ref([
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.55);
-  border: 1px solid rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.9);
   border-radius: 1.25rem;
-  padding: 1rem 1.1rem 1.1rem;
+  padding: 0.85rem 1rem 1rem;
   box-shadow:
     0 4px 6px -1px rgba(21, 57, 170, 0.06),
     0 12px 32px -8px rgba(21, 57, 170, 0.12);
@@ -269,7 +268,7 @@ const botoesbi = ref([
   align-items: center;
   gap: 0.65rem;
   flex-shrink: 0;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.6rem;
   position: relative;
   padding-left: 0.35rem;
 }
@@ -292,7 +291,7 @@ const botoesbi = ref([
 
 .hub-section__title {
   margin: 0;
-  font-size: 1.125rem;
+  font-size: 1.05rem;
   font-weight: 600;
   letter-spacing: -0.02em;
   color: #0f172a;
@@ -301,7 +300,7 @@ const botoesbi = ref([
 .hub-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.65rem;
+  gap: 0.55rem;
   flex: 1 1 0;
   min-height: 0;
   overflow-x: hidden;
@@ -309,12 +308,12 @@ const botoesbi = ref([
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
   align-content: start;
-  padding-right: 2px;
+  padding-right: 3px;
   scrollbar-gutter: stable;
 }
 
 .hub-grid::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 .hub-grid::-webkit-scrollbar-thumb {
@@ -327,45 +326,38 @@ const botoesbi = ref([
   border-radius: 9999px;
 }
 
-/* Uma coluna em telas muito estreitas; duas colunas quando couber confortavelmente */
 @media (min-width: 500px) {
   .hub-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.75rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .hub-grid {
-    gap: 0.85rem;
+    gap: 0.55rem;
   }
 }
 
 @media (min-width: 1200px) {
   .hub-grid {
-    gap: 1rem;
+    gap: 0.65rem;
   }
 }
 
 .hub-card {
   display: flex;
   align-items: center;
-  gap: 0.85rem;
-  min-height: 3.35rem;
-  padding: 0.85rem 1rem;
+  gap: 0.65rem;
+  min-height: 3.15rem;
+  padding: 0.55rem 0.85rem;
   text-decoration: none;
   color: #0f172a;
-  font-size: 0.8125rem;
+  font-size: 0.775rem;
   font-weight: 600;
-  line-height: 1.35;
-  letter-spacing: 0.02em;
+  line-height: 1.25;
+  letter-spacing: 0.015em;
   text-transform: uppercase;
-  border-radius: 0.9rem;
+  border-radius: 0.85rem;
   border: 1px solid rgba(226, 232, 240, 0.95);
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.92) 0%, rgba(248, 250, 252, 0.88) 100%);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.9) 100%);
   box-shadow:
     0 1px 2px rgba(15, 23, 42, 0.04),
-    0 8px 20px -10px rgba(21, 57, 170, 0.18);
+    0 6px 16px -8px rgba(21, 57, 170, 0.14);
   transition:
     transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
@@ -373,11 +365,11 @@ const botoesbi = ref([
 }
 
 .hub-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   border-color: rgba(21, 57, 170, 0.35);
   box-shadow:
     0 4px 12px rgba(15, 23, 42, 0.06),
-    0 16px 36px -12px rgba(21, 57, 170, 0.28);
+    0 14px 28px -10px rgba(21, 57, 170, 0.24);
 }
 
 .hub-card:focus-visible {
@@ -389,18 +381,18 @@ const botoesbi = ref([
   border-color: rgba(255, 77, 0, 0.45);
   box-shadow:
     0 0 0 1px rgba(255, 77, 0, 0.12),
-    0 8px 24px -8px rgba(255, 77, 0, 0.25);
+    0 6px 20px -6px rgba(255, 77, 0, 0.25);
   animation: pulse-border 2s infinite ease-in-out;
 }
 
 @keyframes pulse-border {
   0%, 100% {
     border-color: rgba(255, 77, 0, 0.45);
-    box-shadow: 0 0 0 1px rgba(255, 77, 0, 0.12), 0 8px 24px -8px rgba(255, 77, 0, 0.25);
+    box-shadow: 0 0 0 1px rgba(255, 77, 0, 0.12), 0 6px 20px -6px rgba(255, 77, 0, 0.25);
   }
   50% {
     border-color: rgba(255, 77, 0, 0.95);
-    box-shadow: 0 0 0 4px rgba(255, 77, 0, 0.25), 0 8px 32px -4px rgba(255, 77, 0, 0.4);
+    box-shadow: 0 0 0 3px rgba(255, 77, 0, 0.22), 0 8px 28px -4px rgba(255, 77, 0, 0.38);
   }
 }
 
@@ -409,9 +401,9 @@ const botoesbi = ref([
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 0.65rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.6rem;
   background: linear-gradient(135deg, rgba(21, 57, 170, 0.12) 0%, rgba(21, 57, 170, 0.06) 100%);
   color: #1539aa;
 }
@@ -428,7 +420,7 @@ const botoesbi = ref([
 .hub-card__label-group {
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  gap: 0.1rem;
   flex: 1;
   text-align: left;
   min-width: 0;
@@ -440,12 +432,12 @@ const botoesbi = ref([
 }
 
 .hub-card__sublabel {
-  font-size: 0.6875rem;
+  font-size: 0.64rem;
   text-transform: none;
-  font-weight: 500;
-  color: #ef4444;
+  font-weight: 600;
+  color: #dc2626;
   letter-spacing: 0;
-  line-height: 1.25;
+  line-height: 1.2;
 }
 
 .hub-card__arrow {
@@ -468,9 +460,9 @@ const botoesbi = ref([
 .hub-info-banner {
   display: flex;
   align-items: flex-start;
-  gap: 0.65rem;
-  padding: 0.75rem 0.95rem;
-  margin-bottom: 0.85rem;
+  gap: 0.55rem;
+  padding: 0.55rem 0.8rem;
+  margin-bottom: 0.6rem;
   border-radius: 0.75rem;
   background: rgba(21, 57, 170, 0.06);
   border: 1px solid rgba(21, 57, 170, 0.12);
@@ -484,8 +476,8 @@ const botoesbi = ref([
 }
 
 .hub-info-banner__text {
-  font-size: 0.75rem;
-  line-height: 1.4;
+  font-size: 0.72rem;
+  line-height: 1.35;
   color: #1e293b;
 }
 
