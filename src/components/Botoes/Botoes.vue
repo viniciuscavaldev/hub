@@ -115,7 +115,13 @@ const botoesbi = ref([
   },
   {
     name: "OPERACIONAL - OPTIMUS",
-    link: "https://app.powerbi.com/reportEmbed?reportId=cb778171-07a0-447e-b2f0-90e1ab9fbdd4&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
+    link: "https://app.powerbi.com/reportEmbed?reportId=cb778171-07a0-447e-b2f0-90e1ab9fbdd4&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490",
+    sublabel: "As abas Minha Equipe e Indicadores Operacionais estão no Optimus Lite"
+  },
+  {
+    name: "Optimus Lite",
+    link: "https://app.powerbi.com/reportEmbed?reportId=cb8631aa-e76b-41f8-bef9-47fd2c7d53cf&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490",
+    news: true
   },
   {
     name: "Rechamadas",
@@ -202,7 +208,10 @@ const botoesbi = ref([
           <span class="hub-card__icon-wrap hub-card__icon-wrap--bi" aria-hidden="true">
             <q-icon :name="botao.icon || iconPowerBi(botao.name)" size="22px" />
           </span>
-          <span class="hub-card__label">{{ botao.name }}</span>
+          <span class="hub-card__label-group">
+            <span class="hub-card__label">{{ botao.name }}</span>
+            <span v-if="botao.sublabel" class="hub-card__sublabel">{{ botao.sublabel }}</span>
+          </span>
           <q-icon name="north_east" class="hub-card__arrow" size="18px" aria-hidden="true" />
         </a>
       </div>
