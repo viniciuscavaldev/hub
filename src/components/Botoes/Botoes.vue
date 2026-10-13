@@ -5,6 +5,7 @@ import { ref } from "vue";
 function iconSistema (name) {
   const n = name.toLowerCase();
   if (n.includes("planejador") || n.includes("tarefa")) return "task_alt";
+  if (n.includes("ura")) return "dialpad";
   if (n.includes("copilot")) return "smart_toy";
   if (n.includes("sgp")) return "account_tree";
   if (n.includes("lecom")) return "device_hub";
@@ -51,6 +52,11 @@ const botoes = ref([
   {
     name: "Lecom",
     link: "https://bpm-lecom.hapvida.com.br/sso/?redirectBackTo=https://bpm-lecom.hapvida.com.br/"
+  },
+  {
+    name: "Painel URA Gerencial",
+    link: "http://10.85.204.8:7080",
+    news: true
   },
   {
     name: "Planejador de Tarefas",
