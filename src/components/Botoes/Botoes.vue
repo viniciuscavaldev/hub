@@ -19,6 +19,7 @@ function iconSistema (name) {
   if (n.includes("quadro")) return "groups";
   if (n.includes("sij") || n.includes("jornada") || n.includes("banco de horas")) return "schedule_send";
   if (n.includes("wfm")) return "event_available";
+  if (n.includes("dados") || n.includes("controle")) return "analytics";
   return "apps";
 }
 
@@ -52,6 +53,11 @@ const botoes = ref([
   {
     name: "Lecom",
     link: "https://bpm-lecom.hapvida.com.br/sso/?redirectBackTo=https://bpm-lecom.hapvida.com.br/"
+  },
+  {
+    name: "Painel de Controle Dados",
+    link: "http://10.85.204.8:9020/#/",
+    news: true
   },
   {
     name: "Painel URA Gerencial",
