@@ -149,10 +149,6 @@ const botoesbi = ref([
     link: "https://app.powerbi.com/reportEmbed?reportId=6868c6af-c7fe-4bdc-ac8c-5f141dec47c2&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
   },
   {
-    name: "Relatório de Ligações - D0",
-    link: "https://app.powerbi.com/reportEmbed?reportId=d4d76d79-2631-4544-a594-7a6c96cb269b&autoAuth=true&ctid=77d68323-6f4b-460f-8aae-d32c654ec490"
-  },
-  {
     name: "TRANSFERÊNCIAS",
     link: "https://app.powerbi.com/groups/1a9bc9c6-857c-4818-a85c-323ba2f77511/reports/35882412-5e37-4565-b1b1-da7fd56f0a41/3657517486cff7ddda83?experience=power-bi"
   }
