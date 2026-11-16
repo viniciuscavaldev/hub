@@ -75,6 +75,11 @@ const botoes = ref([
     news: true
   },
   {
+    name: "Span de Controle",
+    link: "http://10.85.204.8:7030/quadro/span",
+    news: true
+  },
+  {
     name: "SIJ - Banco de Horas",
     link: "http://10.85.204.8:4001/#/login",
     sublabel: "Ativo até a descontinuação do Sisqual"
